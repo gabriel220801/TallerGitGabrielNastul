@@ -8,14 +8,19 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h1>Traductor de Números a Letras</h1>
+    <div style="width: 500px;" class="container mt-5">
+        <h1 style="font-family: 'Times New Roman', Times, serif; text-align: center;">Traductor de Números a Letras</h1>
         <input type="number" id="inputNumero" class="form-control" placeholder="Ingrese un número">
-        <button class="btn btn-primary mt-2" onclick="traducir()">Traducir</button>
-        <p id="resultado"></p>
+        <div style="text-align: center; font-family: 'Times New Roman', Times, serif;" class="container">
+            <button class="btn btn-primary mt-2" onclick="traducir()">Traducir a Letras</button>  
+            <button class="btn btn-success mt-2" onclick="traducirIngles()">Traducir a Inglés</button>
+        </div>
     </div>
+    <br>
+    <br>
+    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 50px; color: aqua;" id="resultado"></p>
 
-    <button class="btn btn-secondary mt-2" onclick="traducirIngles()">Traducir a Inglés</button>
+    
 
     
     <script src="index.js"></script>
